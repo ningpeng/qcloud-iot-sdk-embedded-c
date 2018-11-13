@@ -23,9 +23,9 @@
 #include "qcloud_iot_export.h"
 
 /* 产品名称, 与云端同步设备状态时需要  */
-#define QCLOUD_IOT_MY_PRODUCT_ID            "YOUR_PRODUCT_ID"
+#define QCLOUD_IOT_MY_PRODUCT_ID            "56XJ23JLQW"
 /* 设备名称, 与云端同步设备状态时需要 */
-#define QCLOUD_IOT_MY_DEVICE_NAME           "YOUR_DEVICE_NAME"
+#define QCLOUD_IOT_MY_DEVICE_NAME           "device1"
 
 #ifdef AUTH_MODE_CERT
     /* 客户端证书文件名  非对称加密使用*/
@@ -37,7 +37,7 @@
     static char sg_key_file[PATH_MAX + 1];       //客户端密钥全路径
 
 #else
-    #define QCLOUD_IOT_DEVICE_SECRET                  "YOUR_IOT_PSK"
+    #define QCLOUD_IOT_DEVICE_SECRET                  "BbchbGclu4WcNNlI5RvC7A=="
 #endif
 
 static char sg_shadow_update_buffer[200];
