@@ -212,7 +212,7 @@ static int _serialize_connect_packet(unsigned char *buf, size_t buf_len, MQTTCon
 #endif
     
     mqtt_write_char(&ptr, flags.all);
-
+    printf("options->keep_alive_interval: %d\n" , options->keep_alive_interval);
     // 报文可变头部心跳周期/保持连接, 一个以秒为单位的时间间隔, 表示为一个16位的字
     mqtt_write_uint_16(&ptr, options->keep_alive_interval);
 

@@ -24,7 +24,7 @@ extern "C" {
 #define QCLOUD_IOT_DEVICE_SDK_APPID                                	"21010406"
 
 /* MQTT心跳消息发送周期, 单位:ms */
-#define QCLOUD_IOT_MQTT_KEEP_ALIVE_INTERNAL                         (240 * 1000)
+#define QCLOUD_IOT_MQTT_KEEP_ALIVE_INTERNAL                         (2400 * 1000)
 
 /* MQTT 阻塞调用(包括连接, 订阅, 发布等)的超时时间, 单位:ms 建议5000ms */
 #define QCLOUD_IOT_MQTT_COMMAND_TIMEOUT                             (5 * 1000)

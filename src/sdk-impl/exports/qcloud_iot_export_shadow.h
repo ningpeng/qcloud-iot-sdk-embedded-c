@@ -54,9 +54,9 @@ typedef struct {
 } ShadowInitParams;
 
 #ifdef AUTH_MODE_CERT
-    #define DEFAULT_SHAWDOW_INIT_PARAMS { NULL, NULL, NULL, NULL, 2000, 240 * 1000, 1, 1, {0}}
+    #define DEFAULT_SHAWDOW_INIT_PARAMS { NULL, NULL, NULL, NULL, 2000, 3605 * 1000, 1, 1, {0}}
 #else
-    #define DEFAULT_SHAWDOW_INIT_PARAMS { NULL, NULL, NULL, 2000, 240 * 1000, 1, 1, {0}}
+    #define DEFAULT_SHAWDOW_INIT_PARAMS { NULL, NULL, NULL, 2000, 240 * 3606, 1, 1, {0}}
 #endif
 
 /**

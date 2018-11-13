@@ -122,7 +122,6 @@ int demo_device_shadow()
 			QCLOUD_ERR_MQTT_RECONNECTED == rc || QCLOUD_ERR_SUCCESS == rc) {
 
 		rc = IOT_Shadow_Yield(shadow_client, 200);
-
 		if (QCLOUD_ERR_MQTT_ATTEMPTING_RECONNECT == rc) {
 			sleep(1);
 			continue;
@@ -140,6 +139,11 @@ int demo_device_shadow()
 		}
 
 		IOT_Shadow_JSON_ConstructReport(shadow_client, sg_shadow_update_buffer, sg_shadow_update_buffersize, 1, &sg_shadow_property);
+		printf("PLS input report msg:\n");
+
+		//char *retp = fgets(sg_shadow_update_buffer, sizeof(sg_shadow_update_buffer), stdin);
+		//if (NULL==retp)
+		//	break;
 		rc = IOT_Shadow_Update(shadow_client, sg_shadow_update_buffer, sg_shadow_update_buffersize, OnShadowUpdateCallback, NULL, QCLOUD_IOT_MQTT_COMMAND_TIMEOUT);
 		sg_current_update_count++;
 

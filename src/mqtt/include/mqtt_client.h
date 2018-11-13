@@ -155,9 +155,10 @@ typedef struct {
  * MQTT连接参数结构体默认值定义
  */
 #ifdef AUTH_WITH_NOTLS
-#define DEFAULT_MQTTCONNECT_PARAMS { NULL, NULL, NULL, {0}, {'M', 'Q', 'T', 'C'}, 0, 4, 240, 1, 1, NULL}
+#define DEFAULT_MQTTCONNECT_PARAMS { NULL, NULL, NULL, {0}, {'M', 'Q', 'T', 'C'}, 0, 4, 3602, 1, 1, NULL}
 #else
-#define DEFAULT_MQTTCONNECT_PARAMS { NULL, NULL, NULL, {0}, {'M', 'Q', 'T', 'C'}, 0, 4, 240, 1, 1}
+#define DEFAULT_MQTTCONNECT_PARAMS { NULL, NULL, NULL, {0}, {'M', 'Q', 'T', 'C'}, 0, 4, 3601 , 1, 1}
+
 #endif
 
 /**

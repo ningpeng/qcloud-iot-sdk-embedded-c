@@ -177,9 +177,9 @@ typedef struct {
  * MQTT初始化参数结构体默认值定义
  */
 #ifdef AUTH_MODE_CERT
-	#define DEFAULT_MQTTINIT_PARAMS { NULL, NULL, NULL, NULL, 2000, 240 * 1000, 1, 1, {0}}
+	#define DEFAULT_MQTTINIT_PARAMS { NULL, NULL, NULL, NULL, 2000, 3603 * 1000, 1, 1, {0}}
 #else
-    #define DEFAULT_MQTTINIT_PARAMS { NULL, NULL, NULL, 2000, 240 * 1000, 1, 1, {0}}
+    #define DEFAULT_MQTTINIT_PARAMS { NULL, NULL, NULL, 2000, 3604 * 1000, 1, 1, {0}}
 #endif
 
 /**
